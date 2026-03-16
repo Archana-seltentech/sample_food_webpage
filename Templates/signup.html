@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Delivery - Sign Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/signup.css">
+</head>
+<body>
+
+<div class="signup-container">
+
+    <div class="signup-box">
+        <h2>🍔 Create Account</h2>
+        <p>Join us and order your favorite food instantly!</p>
+
+        <form id="contactForm">
+
+            <div class="row">
+                <div class="input-group">
+                    <label>First Name</label>
+                    <input type="text" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Last Name</label>
+                    <input type="text" required>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Email Address</label>
+                <input type="email" required>
+            </div>
+
+            <div class="input-group">
+                <label>Phone Number</label>
+                <input type="tel" required>
+            </div>
+
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" required>
+            </div>
+
+            <div class="input-group">
+                <label>Confirm Password</label>
+                <input type="password" required>
+            </div>
+
+            <div class="terms">
+                <input type="checkbox" required>
+                I agree to the <span>Terms & Conditions</span>
+            </div>
+
+            <button type="submit" class="signup-btn">Create Account</button>
+
+            <p class="login-link">
+                Already have an account?
+                <a href="login.html">Login</a>
+            </p>
+
+        </form>
+    </div>
+
+</div>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+    const form = document.getElementById("contactForm");
+
+    form.addEventListener("submit", function(event){
+        event.preventDefault();
+        alert("You have Register successfully! ✅");
+        form.reset();
+    });
+
+});
+</script>
+</body>
+</html>

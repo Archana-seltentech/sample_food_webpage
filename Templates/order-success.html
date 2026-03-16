@@ -1,0 +1,67 @@
+<head>
+
+<meta charset="UTF-8">
+
+<title>Order Success</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-light d-flex justify-content-center align-items-center" style="min-height:100vh">
+
+<div class="card shadow p-4" style="width:420px">
+
+<h3 class="text-success text-center mb-3">
+✅ Order Placed Successfully
+</h3>
+
+<h5>Customer Details</h5>
+
+<p><b>Name:</b> <span id="name"></span></p>
+<p><b>Phone:</b> <span id="phone"></span></p>
+<p><b>Address:</b> <span id="address"></span></p>
+<p><b>Payment Mode:</b> <span id="payment"></span></p>
+
+<hr>
+
+<h5>Ordered Items</h5>
+
+<ul id="items" class="list-group mb-3"></ul>
+
+<h5>Total Paid: <span id="total"></span></h5>
+
+<a href="home.html" class="btn btn-primary w-100 mt-3">
+Back to Home
+</a>
+
+</div>
+
+<script>
+
+let orderData = JSON.parse(localStorage.getItem("foodOrder"));
+
+document.getElementById("name").innerText = orderData.name;
+document.getElementById("phone").innerText = orderData.phone;
+document.getElementById("address").innerText = orderData.address;
+document.getElementById("payment").innerText = orderData.payment;
+document.getElementById("total").innerText = orderData.total;
+
+let items = document.getElementById("items");
+
+orderData.items.forEach(function(item){
+
+let li = document.createElement("li");
+
+li.className = "list-group-item d-flex justify-content-between";
+
+li.innerHTML = item.food + " (x" + item.qty + ") <span>₹" + item.price + "</span>";
+
+items.appendChild(li);
+
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie - Fresh Food Delivery</title>
+
+ 
+    <script src="https://cdn.tailwindcss.com"></script>
+
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link rel="icon" type="image/png" href="../Assests/food-logo-design_274994-88.avif">
+</head>
+<body class="bg-gray-50 overflow-x-hidden">
+
+
+<nav class="bg-[#0b1f3a] sticky top-0 z-50">
+<div class="container mx-auto flex justify-between items-center py-3 px-4">
+
+<!-- Logo -->
+<div class="flex items-center gap-2">
+<img src="../Assests/food-logo-design_274994-88.avif" class="h-10 w-10">
+<span class="text-white font-bold text-xl">Foodie</span>
+</div>
+
+<!-- Desktop Menu -->
+<div class="hidden md:flex items-center gap-8">
+
+<div class="flex gap-6 text-white">
+<a href="#home" class="hover:text-orange-500">Home</a>
+<a href="#recipe" class="hover:text-orange-500">Recipes</a>
+<a href="./order.html" class="hover:text-orange-500">Orders</a>
+<a href="#offer" class="hover:text-orange-500">Offers</a>
+<a href="#about" class="hover:text-orange-500">About</a>
+<a href="#contact" class="hover:text-orange-500">Contact</a>
+</div>
+
+<div class="flex gap-4">
+<a href="./login.html" class="px-4 py-2 bg-white text-black rounded">Login</a>
+<a href="./signup.html" class="px-4 py-2 bg-orange-500 text-white rounded">Signup</a>
+</div>
+
+</div>
+
+<!-- Hamburger -->
+<div class="md:hidden text-white text-3xl cursor-pointer" id="hamburger">
+☰
+</div>
+
+</div>
+
+<!-- Mobile Menu -->
+<div id="mobileMenu" class="hidden flex-col bg-[#0b1f3a] text-white md:hidden">
+
+<a href="#home" class="py-3 px-4 hover:bg-orange-500">Home</a>
+<a href="#recipe" class="py-3 px-4 hover:bg-orange-500">Recipes</a>
+<a href="./order.html" class="py-3 px-4 hover:bg-orange-500">Orders</a>
+<a href="#offer" class="py-3 px-4 hover:bg-orange-500">Offers</a>
+<a href="#about" class="py-3 px-4 hover:bg-orange-500">About</a>
+<a href="#contact" class="py-3 px-4 hover:bg-orange-500">Contact</a>
+
+<div class="flex flex-col gap-2 p-4">
+<a href="./login.html" class="py-2 bg-white text-[#0b1f3a] text-center rounded">Login</a>
+<a href="./signup.html" class="py-2 bg-orange-500 text-center rounded">Signup</a>
+</div>
+
+</div>
+</nav>
+<section class="relative min-h-[70vh] md:h-[90vh] w-full overflow-hidden">
+  <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover">
+    <source src="../Assests/1111421-hd_1920_1080_30fps.mp4" type="video/mp4">
+  </video>
+  <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white px-4">
+    <h1 class="text-3xl md:text-5xl font-bold mb-4">Delicious Meals Delivered 🍴</h1>
+    <p class="text-lg md:text-xl mb-6">Fresh, hygienic, and fast – straight to your doorstep!</p>
+    <a href="#recipe"
+class="inline-block mt-4 px-6 py-3 bg-orange-500 text-white font-semibold rounded-lg shadow hover:bg-white hover:text-[#0b1f3a] transition">
+Explore Recipes
+</a>
+  </div>
+</section>
+
+
+<section id="home" class="py-16 bg-gray-50">
+  <div class="container mx-auto text-center space-y-6">
+    <h2 class="text-4xl font-bold">Click Your Favorite Food 🍴</h2>
+    <p class="text-gray-600 text-lg md:text-xl">Select a dish directly from the image and explore more delicious options!</p>
+
+    <img src="../Assests/photo-1504674900247-0877df9cc836.jpg"
+         alt="Food Banner"
+         usemap="#foodmap"
+         class="mx-auto w-full max-w-[1100px] rounded-lg shadow-lg"
+
+    <map name="foodmap">
+      <area shape="rect" coords="0,150,366,450" href="https://www.bing.com/search?q=crispy+fried+chicken" alt="Crispy Fried Chicken">
+      <area shape="rect" coords="366,150,733,450" href="https://www.bing.com/search?q=grilled+steak+recipes" alt="Grilled Steak">
+      <area shape="rect" coords="733,150,1100,450" href="https://www.bing.com/search?q=pepper%20steak" alt="Pepper Steak">
+    </map>
+  </div>
+</section>
+
+
+<section id="recipe" class="py-16 bg-gray-50">
+  <div class="container mx-auto text-center mb-12">
+    <h2 class="text-4xl font-bold mb-4">Our Popular Recipes</h2>
+    <p class="text-gray-600">Discover our most loved dishes crafted with authentic flavors and premium ingredients.</p>
+  </div>
+  <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
+   
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:-translate-y-2 transition-transform p-4 flex flex-col">
+      <img src="../Assests/chicken-curry-photography_928503-841.avif" alt="Chicken Curry" class="w-full h-48 object-cover rounded mb-4">
+      <h3 class="text-xl font-semibold mb-2">Chicken Curry</h3>
+      <p class="text-gray-600 mb-2">Hot & spicy Chicken Curry.</p>
+      <p class="font-bold text-orange-500 mb-3">⭐ 4.8 | ₹250</p>
+      <a href="./order.html" class="mt-auto inline-block px-4 py-2 bg-[#0b1f3a] text-white rounded hover:bg-orange-500 transition text-center">Order Now</a>
+    </div>
+
+
+ <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:-translate-y-2 transition-transform p-4 flex flex-col">
+      <img src="../Assests/tandoori-chicken-is-an-indian-non-vegetarian-spicy-food-free-photo.jpg" alt="Tandoori" class="w-full h-48 object-cover rounded mb-4">
+      <h3 class="text-xl font-semibold mb-2">Tandoori</h3>
+      <p class="text-gray-600 mb-2">Spicy & Smokey Aroma Tandoori</p>
+      <p class="font-bold text-orange-500 mb-3">⭐ 4.9 | ₹650</p>
+      <a href="./order.html" class="mt-auto inline-block px-4 py-2 bg-[#0b1f3a] text-white rounded hover:bg-orange-500 transition text-center">Order Now</a>
+    </div>
+
+
+
+     <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:-translate-y-2 transition-transform p-4 flex flex-col">
+      <img src="../Assests/grilled-lamb-chops-with-rosemary-black-plate-vertical_1142-54691.avif" alt="Chicken Curry" class="w-full h-48 object-cover rounded mb-4">
+      <h3 class="text-xl font-semibold mb-2">Lamb-Chop</h3>
+      <p class="text-gray-600 mb-2">Grilled-Lamb-Chops</p>
+      <p class="font-bold text-orange-500 mb-3">⭐ 4.8 | ₹450</p>
+      <a href="./order.html" class="mt-auto inline-block px-4 py-2 bg-[#0b1f3a] text-white rounded hover:bg-orange-500 transition text-center">Order Now</a>
+    </div>
+
+
+
+
+     <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:-translate-y-2 transition-transform p-4 flex flex-col">
+      <img src="../Assests/photo-bowl-delicious-chicken-biriyani-pot_1025753-27412.avif" alt="Chicken Curry" class="w-full h-48 object-cover rounded mb-4">
+      <h3 class="text-xl font-semibold mb-2">Chicken Pot Biriyani</h3>
+      <p class="text-gray-600 mb-2">Hot & spicy Chicken Pot Biriyani.</p>
+      <p class="font-bold text-orange-500 mb-3">⭐ 4.9 | ₹550</p>
+      <a href="./order.html" class="mt-auto inline-block px-4 py-2 bg-[#0b1f3a] text-white rounded hover:bg-orange-500 transition text-center">Order Now</a>
+    </div>
+
+
+
+
+     <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:-translate-y-2 transition-transform p-4 flex flex-col">
+      <img src="../Assests/photo-1504674900247-0877df9cc836.jpg" alt="Chicken Curry" class="w-full h-48 object-cover rounded mb-4">
+      <h3 class="text-xl font-semibold mb-2">Chicken Stripes</h3>
+      <p class="text-gray-600 mb-2">Hot & spicy Chicken Curry.</p>
+      <p class="font-bold text-orange-500 mb-3">⭐ 4.8 | ₹300</p>
+      <a href="./order.html" class="mt-auto inline-block px-4 py-2 bg-[#0b1f3a] text-white rounded hover:bg-orange-500 transition text-center">Order Now</a>
+    </div>
+
+
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:-translate-y-2 transition-transform p-4 flex flex-col">
+      <img src="../Assests/chicken-curry-photography_928503-841.avif" alt="Chicken Curry" class="w-full h-48 object-cover rounded mb-4">
+      <h3 class="text-xl font-semibold mb-2">Chicken Curry</h3>
+      <p class="text-gray-600 mb-2">Hot & spicy Chicken Curry.</p>
+      <p class="font-bold text-orange-500 mb-3">⭐ 4.8 | ₹250</p>
+      <a href="./order.html" class="mt-auto inline-block px-4 py-2 bg-[#0b1f3a] text-white rounded hover:bg-orange-500 transition text-center">Order Now</a>
+    </div>
+
+
+ 
+
+
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:-translate-y-2 transition-transform p-4 flex flex-col">
+      <img src="../Assests/tandoori-chicken-is-an-indian-non-vegetarian-spicy-food-free-photo.jpg" alt="Tandoori" class="w-full h-48 object-cover rounded mb-4">
+      <h3 class="text-xl font-semibold mb-2">Tandoori</h3>
+      <p class="text-gray-600 mb-2">Spicy & Smokey Aroma Tandoori</p>
+      <p class="font-bold text-orange-500 mb-3">⭐ 4.9 | ₹650</p>
+      <a href="./order.html" class="mt-auto inline-block px-4 py-2 bg-[#0b1f3a] text-white rounded hover:bg-orange-500 transition text-center">Order Now</a>
+    </div>
+
+
+
+
+     <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:-translate-y-2 transition-transform p-4 flex flex-col">
+      <img src="../Assests/fast-food-feast-a-delicious-variety-of-food-photo.jpg" alt="Tandoori" class="w-full h-48 object-cover rounded mb-4">
+      <h3 class="text-xl font-semibold mb-2">FastFood Variety Feast</h3>
+      <p class="text-gray-600 mb-2">>FastFood Variety Feast Aroma Flavourfulled</p>
+      <p class="font-bold text-orange-500 mb-3">⭐ 4.9 | ₹650</p>
+      <a href="./order.html" class="mt-auto inline-block px-4 py-2 bg-[#0b1f3a] text-white rounded hover:bg-orange-500 transition text-center">Order Now</a>
+    </div>
+
+    
+  </div>
+</section>
+
+
+<section id="offer" class="py-16 bg-gray-100">
+  <div class="container mx-auto text-center mb-12">
+    <h2 class="text-4xl font-bold mb-4 text-red-500">🔥 Today's Special Offers</h2>
+    <p class="text-gray-600 mb-8">Grab the best deals before they're gone!</p>
+  </div>
+  <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4">
+   
+    <div class="bg-white rounded-lg shadow-lg p-6 hover:-translate-y-2 transition-transform flex flex-col items-center">
+      <h3 class="text-2xl mb-2">🍕 Pizza Combo</h3>
+      <p class="text-lg mb-4">Flat <span class="bg-red-500 text-white px-2 rounded">40% OFF</span></p>
+      <button class="px-6 py-2 bg-orange-500 text-white rounded hover:bg-[#0b1f3a] transition">Order Now</button>
+    </div>
+
+
+      <div class="bg-white rounded-lg shadow-lg p-6 hover:-translate-y-2 transition-transform flex flex-col items-center">
+      <h3 class="text-2xl mb-2">🥗 Healthy Salad</h3>
+      <p class="text-lg mb-4">Flat <span class="bg-red-500 text-white px-2 rounded">30% OFF</span></p>
+      <button class="px-6 py-2 bg-orange-500 text-white rounded hover:bg-[#0b1f3a] transition">Order Now</button>
+    </div>
+
+
+      <div class="bg-white rounded-lg shadow-lg p-6 hover:-translate-y-2 transition-transform flex flex-col items-center">
+      <h3 class="text-2xl mb-2">🍗 Chicken Bucket</h3>
+      <p class="text-lg mb-4">Save <span class="bg-red-500 text-white px-2 rounded">₹200</span></p>
+      <button class="px-6 py-2 bg-orange-500 text-white rounded hover:bg-[#0b1f3a] transition">Order Now</button>
+    </div>
+
+
+       <div class="bg-white rounded-lg shadow-lg p-6 hover:-translate-y-2 transition-transform flex flex-col items-center">
+      <h3 class="text-2xl mb-2">🍔 Burger Meal</h3>
+      <p class="text-lg mb-4">Buy 1 Get <span class="bg-red-500 text-white px-2 rounded">1 Free</span></p>
+      <button class="px-6 py-2 bg-orange-500 text-white rounded hover:bg-[#0b1f3a] transition">Order Now</button>
+    </div>
+
+
+       <div class="bg-white rounded-lg shadow-lg p-6 hover:-translate-y-2 transition-transform flex flex-col items-center">
+      <h3 class="text-2xl mb-2">🍝 Pasta Delight</h3>
+      <p class="text-lg mb-4">Save <span class="bg-red-500 text-white px-2 rounded">₹150</span></p>
+      <button class="px-6 py-2 bg-orange-500 text-white rounded hover:bg-[#0b1f3a] transition">Order Now</button>
+    </div>
+
+
+       <div class="bg-white rounded-lg shadow-lg p-6 hover:-translate-y-2 transition-transform flex flex-col items-center">
+      <h3 class="text-2xl mb-2">🥪 Sandwich Meal</h3>
+      <p class="text-lg mb-4">Buy 2 Get <span class="bg-red-500 text-white px-2 rounded">1 Free</span></p>
+      <button class="px-6 py-2 bg-orange-500 text-white rounded hover:bg-[#0b1f3a] transition">Order Now</button>
+    </div>
+   
+  </div>
+</section>
+
+
+<section id="about" class="py-16 bg-white">
+  <div class="container mx-auto grid md:grid-cols-2 gap-12 items-center px-4">
+    <div>
+      <img src="../Assests/Chef plating a dish in a warm kitchen.png" alt="Chef Cooking" class="rounded-lg shadow-lg w-full hover:scale-105 transition-transform">
+    </div>
+    <div>
+      <h2 class="text-4xl font-bold mb-4">About <span class="text-orange-500">Foodie</span></h2>
+      <p class="text-gray-600 mb-4">
+        Foodie is a premium online food delivery platform bringing fresh, hygienic, and high-quality meals to your doorstep.
+      </p>
+      <ul class="mb-6 space-y-2">
+        <li>✔ 100% Fresh Ingredients</li>
+        <li>✔ Fast & Reliable Delivery</li>
+        <li>✔ Trusted Restaurant Partners</li>
+        <li>✔ 24/7 Customer Support</li>
+      </ul>
+      <a href="#" class="px-6 py-2 bg-orange-500 text-white rounded hover:bg-[#0b1f3a] transition">Explore More</a>
+    </div>
+  </div>
+</section>
+
+
+<section id="contact" class="py-16 bg-gray-50">
+  <div class="container mx-auto text-center mb-12 px-4">
+    <h2 class="text-4xl font-bold mb-4">Contact Us</h2>
+    <p class="text-gray-600">Have questions or feedback? Our support team is here to help you 24/7.</p>
+  </div>
+  <div class="container mx-auto max-w-xl px-4">
+    <form id="contactForm" class="flex flex-col gap-4">
+      <input type="text" placeholder="First Name" class="p-3 border rounded" required>
+      <input type="text" placeholder="Last Name" class="p-3 border rounded" required>
+      <input type="email" placeholder="Email" class="p-3 border rounded" required>
+      <input type="text" placeholder="Subject" class="p-3 border rounded">
+      <textarea placeholder="Message" rows="4" class="p-3 border rounded"></textarea>
+      <button type="submit" class="px-6 py-3 bg-orange-500 text-white rounded hover:bg-[#0b1f3a] transition">Submit</button>
+    </form>
+  </div>
+</section>
+
+
+<footer class="bg-[#0b1f3a] text-white text-center py-6">
+  <p>© 2026 Foodie. All Rights Reserved.</p>
+</footer>
+
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  document.addEventListener("DOMContentLoaded", function(){
+      const form = document.getElementById("contactForm");
+      form.addEventListener("submit", function(event){
+          event.preventDefault();
+          alert("Your form has been submitted successfully! ✅");
+          form.reset();
+      });
+  });
+</script>
+</body>
+</html>

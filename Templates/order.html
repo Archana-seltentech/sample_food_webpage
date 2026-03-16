@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Order Page - Foodie</title>
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-gray-100">
+
+
+<nav class="bg-gray-900 text-white shadow-lg">
+  <div class="container d-flex justify-content-between align-items-center py-3 flex-wrap">
+
+    <div class="d-flex align-items-center gap-2">
+      <img src="../Assests/food-logo-design_274994-88.avif" width="45" alt="Foodie Logo">
+      <h4 class="text-orange-500 font-bold m-0">Foodie</h4>
+    </div>
+
+ 
+    <ul class="nav gap-4 m-0">
+      <li class="nav-item"><a href="./home.html" class="nav-link text-white hover:text-orange-400">Home</a></li>
+      <li class="nav-item"><a href="./home.html#recipe" class="nav-link text-white hover:text-orange-400">Recipes</a></li>
+      <a href="./order.html" class="nav-link text-orange-500 fw-bold">Orders</a>
+      <li class="nav-item"><a href="./home.html#offer" class="nav-link text-white hover:text-orange-400">Offers</a></li>
+      <li class="nav-item"><a href="./home.html#about" class="nav-link text-white hover:text-orange-400">About</a></li>
+      <li class="nav-item"><a href="./home.html#contact" class="nav-link text-white hover:text-orange-500">Contact</a></li>
+    </ul>
+
+   
+    <div class="d-flex gap-2 mt-2 mt-md-0">
+      <a href="./login.html" class="px-4 py-2 bg-white text-gray-900 font-semibold rounded shadow hover:bg-orange-500 hover:text-white transition duration-300 transform hover:-translate-y-1">Login</a>
+      <a href="./signup.html" class="px-4 py-2 bg-orange-500 text-white font-semibold rounded shadow hover:bg-white hover:text-orange-500 transition duration-300 transform hover:-translate-y-1">Signup</a>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container mt-5">
+  <h2 class="text-center text-orange-600 font-bold mb-5 text-2xl sm:text-3xl">🛒 Order Summary</h2>
+
+  <div class="row gx-4">
+    
+    <div class="col-md-7">
+      <div class="d-flex flex-column gap-3">
+        
+      <div class="card p-3 shadow d-flex justify-content-between align-items-center flex-wrap">
+
+<div class="d-flex align-items-center gap-3">
+<img src="../Assests/chicken-curry-photography_928503-841.avif" class="w-20 h-20 rounded">
+
+<div>
+<h5 class="fw-bold mb-0">Chicken Curry</h5>
+<p class="text-gray-600 mb-0">₹250</p>
+</div>
+</div>
+
+<div class="d-flex align-items-center gap-2 mt-2 mt-md-0">
+
+<button onclick="decreaseQty('chicken')" class="px-3 py-1 bg-gray-300 rounded">-</button>
+
+<span id="chickenQty">1</span>
+
+<button onclick="increaseQty('chicken')" class="px-3 py-1 bg-gray-300 rounded">+</button>
+
+</div>
+
+</div>
+
+      
+        <div class="card p-3 shadow d-flex justify-content-between align-items-center flex-wrap">
+          <div class="d-flex align-items-center gap-3">
+            <img src="../Assests/fast-food-feast-a-delicious-variety-of-food-photo.jpg" class="w-20 h-20 rounded" alt="Veg Fried Rice">
+            <div>
+              <h5 class="fw-bold mb-0">Veg Fried Rice</h5>
+              <p class="text-gray-600 mb-0">₹180</p>
+            </div>
+            
+          </div>
+          <div class="d-flex align-items-center gap-2 mt-2 mt-md-0">
+            <button onclick="decreaseQty('rice')" class="px-3 py-1 bg-gray-300 rounded">-</button>
+<span id="riceQty">1</span>
+<button onclick="increaseQty('rice')" class="px-3 py-1 bg-gray-300 rounded">+</button>
+          </div>
+        </div>
+
+       <div class="card p-3 shadow d-flex justify-content-between align-items-center flex-wrap">
+      <div class="d-flex align-items-center gap-3">
+        <img src="../Assests/photo-bowl-delicious-chicken-biriyani-pot_1025753-27412.avif" class="w-20 h-20 rounded" alt="Pot Biriyani">
+        <div>
+          <h5 class="fw-bold mb-0">Pot Biriyani</h5>
+          <p class="text-gray-600 mb-0">₹550</p>
+        </div>
+      </div>
+      <div class="d-flex items-center gap-2 mt-2 mt-md-0">
+       <button onclick="decreaseQty('biriyani')" class="px-3 py-1 bg-gray-300 rounded">-</button>
+
+<span id="biriyaniQty">1</span>
+
+<button onclick="increaseQty('biriyani')" class="px-3 py-1 bg-gray-300 rounded">+</button>
+      </div>
+    </div>
+
+    <div class="card p-3 shadow d-flex justify-content-between align-items-center flex-wrap">
+      <div class="d-flex align-items-center gap-3">
+        <img src="../Assests/grilled-lamb-chops-with-rosemary-black-plate-vertical_1142-54691.avif" class="w-20 h-20 rounded" alt="Grilled Lamb Chops">
+        <div>
+          <h5 class="fw-bold mb-0">Grilled Lamb Chops</h5>
+          <p class="text-gray-600 mb-0">₹450</p>
+        </div>
+      </div>
+      <div class="d-flex items-center gap-2 mt-2 mt-md-0">
+       <button onclick="decreaseQty('lamb')" class="px-3 py-1 bg-gray-300 rounded">-</button>
+
+<span id="lambQty">1</span>
+
+<button onclick="increaseQty('lamb')" class="px-3 py-1 bg-gray-300 rounded">+</button>
+      </div>
+    </div>
+
+     <div class="card p-3 shadow d-flex justify-content-between align-items-center flex-wrap">
+      <div class="d-flex align-items-center gap-3">
+        <img src="../Assests/tandoori-chicken-is-an-indian-non-vegetarian-spicy-food-free-photo.jpg" class="w-20 h-20 rounded" alt="Tandoori Chicken">
+        <div>
+          <h5 class="fw-bold mb-0">Tandoori Chicken</h5>
+          <p class="text-gray-600 mb-0">₹650</p>
+        </div>
+      </div>
+      <div class="d-flex items-center gap-2 mt-2 mt-md-0">
+       <button onclick="decreaseQty('tandoori')" class="px-3 py-1 bg-gray-300 rounded">-</button>
+
+<span id="tandooriQty">1</span>
+
+<button onclick="increaseQty('tandoori')" class="px-3 py-1 bg-gray-300 rounded">+</button>
+      </div>
+    </div>
+
+
+
+        
+      </div>
+    </div>
+
+    
+    <div class="col-md-5 mt-4 mt-md-0">
+      <div class="card p-4 shadow d-flex flex-column gap-3">
+        <h4 class="text-orange-600 fw-bold mb-3">Customer Details</h4>
+        <input type="text" id="customerName" placeholder="Customer Name" class="form-control">
+
+<input type="tel" id="phone" placeholder="Phone Number" class="form-control">
+
+<textarea id="address" placeholder="Delivery Address" class="form-control"></textarea>
+
+<select id="payment" class="form-select mb-3">
+  <option>Cash on Delivery</option>
+  <option>UPI</option>
+  <option>Debit / Credit Card</option>
+</select>
+
+        <hr class="my-3">
+
+        <p>Item Total: ₹<span id="itemTotal">0</span></p>
+<p>Delivery Fee: ₹40</p>
+<h5 class="fw-bold">Total: ₹<span id="totalPrice">470</span></h5>
+
+       <button onclick="placeOrder()" class="btn btn-danger w-100 mt-2">
+Place Order
+</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white mt-5">
+  <div class="container py-8 grid md:grid-cols-3 gap-6 text-center md:text-left">
+
+    <!-- Brand -->
+    <div class="flex flex-col items-center md:items-start gap-3">
+      <img src="../Assests/food-logo-design_274994-88.avif" width="50" alt="Foodie Logo">
+      <h4 class="text-orange-500 font-bold text-xl">Foodie</h4>
+      <p class="text-gray-400 text-sm">
+        Fresh & delicious meals delivered to your doorstep.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="flex flex-col gap-2">
+      <h5 class="font-bold mb-2">Quick Links</h5>
+      <a href="./home.html" class="text-gray-400 hover:text-orange-500 transition">Home</a>
+      <a href="./home.html#recipe" class="text-gray-400 hover:text-orange-500 transition">Recipes</a>
+      <a href="./home.html#offer" class="text-gray-400 hover:text-orange-500 transition">Offers</a>
+      <a href="./home.html#about" class="text-gray-400 hover:text-orange-500 transition">About</a>
+      <a href="./home.html#contact" class="text-gray-400 hover:text-orange-500 transition">Contact</a>
+    </div>
+
+    <!-- Contact Info / Socials -->
+    <div class="flex flex-col gap-3">
+      <h5 class="font-bold mb-2">Contact Us</h5>
+      <p class="text-gray-400 text-sm">📍 123 Foodie Street, Chennai, India</p>
+      <p class="text-gray-400 text-sm">📞 +91 98765 43210</p>
+      <p class="text-gray-400 text-sm">✉️ support@foodie.com</p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="border-t border-gray-700 mt-4 pt-4 text-center text-gray-500 text-sm">
+    © 2026 Foodie. All Rights Reserved.
+  </div>
+</footer>
+
+<script>
+
+function placeOrder(){
+
+let name = document.getElementById("customerName").value;
+let phone = document.getElementById("phone").value;
+let address = document.getElementById("address").value;
+let payment = document.getElementById("payment").value;
+
+/* Auto Generate Order ID */
+let orderId = "FD" + Math.floor(Math.random() * 100000);
+
+let order = {
+orderId: orderId,
+name:name,
+phone:phone,
+address:address,
+payment:payment,
+
+items:[
+{food:"Chicken Curry",price:250,qty: quantity.chicken},
+{food:"Veg Fried Rice",price:180,qty: quantity.rice},
+{food:"Pot Biriyani",price:550,qty: quantity.biriyani},
+{food:"Grilled Lamb Chops",price:450,qty: quantity.lamb},
+{food:"Tandoori Chicken",price:650,qty: quantity.tandoori}
+],
+
+total: document.getElementById("totalPrice").innerText
+};
+
+localStorage.setItem("foodOrder",JSON.stringify(order));
+
+window.location.href="order-success.html";
+
+}
+
+</script>
+
+
+
+
+
+
+<script>
+
+let prices = {
+  chicken:250,
+  rice:180,
+  biriyani:550,
+  lamb:450,
+  tandoori:650
+};
+
+let quantity = {
+  chicken:1,
+  rice:1,
+  biriyani:1,
+  lamb:1,
+  tandoori:1
+};
+
+function increaseQty(item){
+
+  quantity[item]++;
+
+  document.getElementById(item + "Qty").innerText = quantity[item];
+
+  updateTotal();
+}
+
+function decreaseQty(item){
+
+  if(quantity[item] > 1){
+
+    quantity[item]--;
+
+    document.getElementById(item + "Qty").innerText = quantity[item];
+
+    updateTotal();
+  }
+}
+
+function updateTotal(){
+
+  let itemTotal = 0;
+
+  for(let item in prices){
+
+    itemTotal += prices[item] * quantity[item];
+  }
+
+  document.getElementById("itemTotal").innerText = itemTotal;
+
+  let total = itemTotal + 40;
+
+  document.getElementById("totalPrice").innerText = total;
+}
+
+</script>
+</body>
+</html>
